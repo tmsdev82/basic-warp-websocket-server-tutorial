@@ -19,7 +19,7 @@ pub async fn client_connection(ws: WebSocket, clients: Clients) {
         }
     }));
 
-    let uuid = Uuid::new_v4().to_simple().to_string();
+    let uuid = Uuid::new_v4().simple().to_string();
 
     let new_client = Client {
         client_id: uuid.clone(),
